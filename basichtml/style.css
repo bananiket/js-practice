@@ -1,0 +1,16 @@
+body{
+  padding: 30px;
+}
+
+.codeblock{
+  background-color: #282a36;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  padding: 0 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
