@@ -1,16 +1,93 @@
+*{
+  margin: 0;
+}
 body{
-  padding: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.codeblock{
-  background-color: #282a36;
-  height: 40px;
-  border-radius: 5px;
-  color: white;
-  padding: 0 10px;
+nav{
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  flex: 0;
+  gap: 15px;
+  padding: 10px;
 }
+
+.profilePic{
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon{
+  vertical-align: middle;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+img[alt="GoogleImg"]{
+  margin-bottom: 20px;
+}
+
+input[name="googleSearch"]{
+  height: 40px;
+  width: 70%;
+  border-radius: 20px;
+  background-color: rgb(26, 28, 29);
+  border: 1px solid grey;
+  margin-bottom: 30px;
+}
+
+.btns{
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgb(38, 41, 42);
+  border: 1px solid grey;
+}
+ .btnDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+ }
+
+ /* .linkColor{
+  color: #85c4ff;
+ } */
+
+.something > a{
+  color: #85c4ff;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0;
+  padding: 20px 60px;
+  border-top: 1px solid grey;
+  background-color: rgb(17, 19, 19);
+}
+
+footer > div{
+  display: flex;
+  gap: 30px;
+}
+
