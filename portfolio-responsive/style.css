@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.navbar {
+  color: black;
+}
+.navbar:hover {
+  text-decoration: underline;
+}
+
+.sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+input[type="button"] {
+  padding: 10px 30px;
+  margin-right: 40px;
+}
+input[type="button"]:hover {
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: rgb(0, 208, 32);
+  color: white;
+  border: 0cap;
+  border-radius: 5px;
+}
+.btn-secondary {
+  background-color: white;
+  color: red;
+  border: 1px solid crimson;
+  border-radius: 5px;
+}
+
+.box-2 {
+  background-color: rgb(50, 50, 50);
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box-2 div > img {
+  height: 40px;
+  border-radius: 10px;
+}
+.box-2 div > a {
+  color: white;
+}
+.box-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  font-weight: bolder;
+}
+
+.sec-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 100px 30px;
+  animation-name: example;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 4s;
+}
+
+/* What happens when screen width is above 800px */
+@media screen and (min-width: 800px) {
+  .sec-2 {
+    flex-direction: row;
+    padding: 100px 100px;
+  }
+}
+
+.sec-2 > img {
+  margin-bottom: 60px;
+  /* height: 200px; */
+  height: 100px;
+  transition: width 1s, height 1s;
+}
+
+.sec-2 div {
+  width: 90%;
+}
+
+/* What happens when screen width is above 600px */
+@media screen and (min-width: 800px) {
+  .sec-2 > img {
+    margin-bottom: 0px;
+    margin-left: 60px;
+    height: 200px;
+    transition: width 1s, height 1s;
+  }
+  /* 
+  .sec-2 div {
+    width: 90%;
+  } */
+}
+
+.sec-2 div > p {
+  text-align: justify;
+}
+
+.sec-3 > h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sec-3 {
+  padding: 0 100px;
+}
+
+.cardbox h3 {
+  padding-bottom: 15px;
+}
+
+.cardbox p {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+.cardbox img {
+  height: 100px;
+  margin-bottom: 15px;
+}
+.cardbox {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  gap: 50px;
+}
+
+.card-1 {
+  background-color: rgb(159, 169, 255);
+  padding: 60px 20px;
+  width: 300px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+.card-2 {
+  background-color: rgb(179, 255, 119);
+  padding: 60px 20px;
+  width: 300px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.card-3 {
+  background-color: rgb(255, 224, 98);
+  padding: 60px 20px;
+  width: 300px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.sec-4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.sec-4 img {
+  height: 350px;
+  /* margin-top: 10px; */
+}
+
+.skillBox div {
+  display: flex;
+  justify-content: space-between;
+  gap: 420px;
+  margin-bottom: 40px;
+}
