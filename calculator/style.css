@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+.calc-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    background-color: blanchedalmond;
+    padding: 10px 20px;
+}
+section{
+    
+}
+
+.output{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 20px 40px;
+}
+
+/* button{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(223, 221, 221);
+    font-size: larger;
+} */
+
+button{
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(223, 221, 221);
+    font-size: xx-large;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.calc-buttons button:nth-child(-n+3){
+    background-color: #c4c5c5;
+}
+
+.calc-buttons button:nth-child(4n){
+    background-color:  #acdbe9;
+}
+
+
+.calc-buttons button:nth-last-child(1){
+    background-color: rgb(132, 139, 209);
+}
+
+.calc-buttons button:nth-child(1){
+    color: red;
+}
+/* button:active{
+    background-color: black;
+} */
+button:after {
+    content: "";
+    background: rgb(71, 77, 141);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
