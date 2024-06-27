@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Medical History Form</h1>
+    </header>
+
+    <form action="">
+        <!-- Person -->
+
+        <label for="fullName">Full Name</label>
+        <div class="fullName" id="fullName">
+            <input type="text" name="fullName" class="name" placeholder="First Name">
+            <input type="text" name="fullName" class="name" placeholder="Last Name">
+        </div>
+
+        <div class="age-gender" id="age-gender">
+            <div class="agDiv">
+                <label for="age">What is your age?</label>
+                <input type="number" name="age" id="age" class="yourAG" placeholder="Your Age">
+            </div>
+            <div class="agDiv">
+                <label for="gender">What is your gender?</label>
+                <input type="text" name="gender" id="gender" class="yourAG" placeholder="Your Gender">
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="neDiv">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" name="contactNumber" id="contactNumber" class="numEmail" placeholder="Your Number">
+            </div>
+
+            <div class="neDiv">
+                <label for="email">Email Address</label>
+                <input type="tel" name="email" id="email" class="numEmail" placeholder="Your Email">
+            </div>
+        </div>
+
+        <!-- conditions -->
+        <div class="condition">
+            <!-- <div class="condition-label"> -->
+            <label for="conditions">Check the conditions that apply to you or any member of your immediate
+                relatives:</label><br>
+            <!-- </div> -->
+
+            <div class="condition-checkboxes">
+                <div class="cndt-box">
+                    <div>
+                        <input type="checkbox" name="condition-1" id="condition-1">
+                        <label for="condition-1">Asthama</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="condition-2" id="condition-2">
+                        <label for="condition-2">Cardiac disease</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="condition-3" id="condition-3">
+                        <label for="condition-3">Hypertension</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="condition-4" id="condition-4">
+                        <label for="condition-4">Epilepsy</label>
+                    </div>
+                </div>
+                <div class="cndt-box">
+                    <div>
+                        <input type="checkbox" name="condition-5" id="condition-5">
+                        <label for="condition-5">Cancer</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="condition-6" id="condition-6">
+                        <label for="condition-6">Diabetes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="condition-7" id="condition-7">
+                        <label for="condition-7">Psychiatric disorder</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="condition-8" id="condition-8">
+                        <label for="condition-8">Other</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- symptoms -->
+        <div class="symptoms">
+
+            <label for="symptoms">Check the symptoms that you' re currently experiencing:</label><br>
+
+            <div class="symptoms-checkboxes">
+                <div class="symtm-box">
+                    <div>
+                        <input type="checkbox" name="symptom-1" id="symptom-1">
+                        <label for="symptom-1">Chest pain</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-2" id="symptom-2">
+                        <label for="symptom-2">Respiratory</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-3" id="symptom-3">
+                        <label for="symptom-3">Cardiovascular</label>
+                    </div>
+                </div>
+
+                <div class="symtm-box">
+                    <div>
+                        <input type="checkbox" name="symptom-4" id="symptom-4">
+                        <label for="symptom-4">Hematological</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-5" id="symptom-5">
+                        <label for="symptom-5">Lymphatic</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-6" id="symptom-6">
+                        <label for="symptom-6">Neurological</label>
+                    </div>
+                </div>
+
+                <div class="symtm-box">
+                    <div>
+                        <input type="checkbox" name="symptom-7" id="symptom-7">
+                        <label for="symptom-7">Psychiatric</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-8" id="symptom-8">
+                        <label for="symptom-8">Gastrointestinal</label><br>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-9" id="symptom-9">
+                        <label for="symptom-9">Genitourinary</label>
+                    </div>
+                </div>
+
+                <div class="symtm-box">
+                    <div>
+                        <input type="checkbox" name="symptom-10" id="symptom-10">
+                        <label for="symptom-10">Musculoskeletal</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-11" id="symptom-11">
+                        <label for="symptom-11">Weight gain/loss</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="symptom-12" id="symptom-12">
+                        <label for="symptom-12">Other</label><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- On medication -->
+        <div class="medication">
+            <label for="onMedication">Are you currently taking any medication?</label><br>
+
+            <div class="radio-ys">
+                <div>
+                <input type="radio" name="medication" id="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="medication" id="no">
+                <label for="no">No</label><br>
+            </div>
+            </div>
+
+            <label for="allMedications">Please list them:</label><br>
+            <input type="text" name="allMedications" id="allMedications" class="input-medi" placeholder="Type here..."><br>
+        </div>
+        <!-- Allergies -->
+        <div>
+            <label for="medicationallergies">Do you have any medication allergies?</label><br>
+            <input type="radio" name="allergies" id="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="allergies" id="no">
+            <label for="no">No</label>
+
+            <input type="radio" name="allergies" id="notSure">
+            <label for="notSure">Not Sure</label><br>
+
+            <label for="allAllergies">Please list them:</label><br>
+            <input type="text" name="allAllergies" id="allAllergies"><br>
+        </div>
+
+        <!-- drugs -->
+        <div>
+            <label for="useDrugs">A drug that you consume on a regular basis?</label><br>
+            <select name="drugs" id="useDrugs">
+                <option value="">Select the Drug</option>
+                <option value="marijuana">Marijuana</option>
+                <option value="cocaine">Cocaine</option>
+                <option value="meth">Meth</option>
+                <option value="lsd">LSD</option>
+                <option value="Melatonin">Melatonin</option>
+                <option value="liquor">Liquor</option>
+                <option value="tobacco">Tobacco</option>
+            </select><br>
+        </div>
+        <div>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+</body>
+
+</html>

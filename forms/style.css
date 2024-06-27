@@ -1,0 +1,132 @@
+
+*{
+   margin: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+header{
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+label{
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* full name */
+.fullName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 30px;
+}
+.name{
+    flex: 1;
+    padding: 10px;
+}
+
+
+/* age/gender */
+.age-gender{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0px;
+}
+.agDiv{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.yourAG{
+    margin-top: 20px;
+    padding: 10px ;
+}
+
+
+/* contact info */
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px 0px;
+}
+.neDiv{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.numEmail{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* condition */
+.condition{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+}
+.condition-checkboxes{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.cndt-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.cndt-box div{
+    margin-bottom: 10px;
+}
+
+
+/* symptoms */
+.symptoms{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+}
+.symptoms-checkboxes{
+    display: flex;
+    justify-content: space-between;
+}
+/* .symtm-box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aqua;
+} */
+.symtm-box div{
+    margin-bottom: 10px;
+}
+
+/* medication */
+.medication{
+    margin: 40px 0px;
+}
+.radio-ys{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.radio-ys div{
+    flex: 1;
+}
+.input-medi{
+    margin-top: 10px;
+    padding: 100px;
+}
+
+
+
