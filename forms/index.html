@@ -19,8 +19,8 @@
 
         <label for="fullName">Full Name</label>
         <div class="fullName" id="fullName">
-            <input type="text" name="fullName" class="name" placeholder="First Name">
-            <input type="text" name="fullName" class="name" placeholder="Last Name">
+            <input type="text" name="fullName" class="name" id="firstName" placeholder="First Name">
+            <input type="text" name="fullName" class="name" id="lastName" placeholder="Last Name">
         </div>
 
         <div class="age-gender" id="age-gender">
@@ -56,41 +56,42 @@
             <div class="condition-checkboxes">
                 <div class="cndt-box">
                     <div>
-                        <input type="checkbox" name="condition-1" id="condition-1">
+                        <input type="checkbox" name="condition" id="condition-1" value="Asthama">
                         <label for="condition-1">Asthama</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="condition-2" id="condition-2">
+                        <input type="checkbox" name="condition" id="condition-2" value="Cardiac disease">
                         <label for="condition-2">Cardiac disease</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="condition-3" id="condition-3">
+                        <input type="checkbox" name="condition" id="condition-3" value="Hypertension">
                         <label for="condition-3">Hypertension</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="condition-4" id="condition-4">
+                        <input type="checkbox" name="condition" id="condition-4" value="Epilepsy">
                         <label for="condition-4">Epilepsy</label>
                     </div>
                 </div>
                 <div class="cndt-box">
                     <div>
-                        <input type="checkbox" name="condition-5" id="condition-5">
+                        <input type="checkbox" name="condition" id="condition-5" value="Cancer">
                         <label for="condition-5">Cancer</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="condition-6" id="condition-6">
+                        <input type="checkbox" name="condition" id="condition-6" value="Diabetes">
                         <label for="condition-6">Diabetes</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="condition-7" id="condition-7">
+                        <input type="checkbox" name="condition" id="condition-7" value="Psychiatric disorder">
                         <label for="condition-7">Psychiatric disorder</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="condition-8" id="condition-8">
+                        <input type="checkbox" name="condition" id="condition-8" value="Other">
                         <label for="condition-8">Other</label>
                     </div>
                 </div>
             </div>
+            <input type="text" class="other-condt" id="other-condt" placeholder="Type other options here...">
         </div>
 
         <!-- symptoms -->
@@ -165,39 +166,54 @@
         <div class="medication">
             <label for="onMedication">Are you currently taking any medication?</label><br>
 
-            <div class="radio-ys">
+            <div class="radio-yn">
                 <div>
-                <input type="radio" name="medication" id="yes">
-                <label for="yes">Yes</label>
-            </div>
-            <div>
-                <input type="radio" name="medication" id="no">
-                <label for="no">No</label><br>
-            </div>
+                    <input type="radio" name="medication" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="medication" id="no">
+                    <label for="no">No</label>
+                </div>
+                <div></div>
             </div>
 
-            <label for="allMedications">Please list them:</label><br>
-            <input type="text" name="allMedications" id="allMedications" class="input-medi" placeholder="Type here..."><br>
+            <div class="currentMedi">
+                <label for="allMedications">Please list them:</label>
+                <textarea name="allMedications" id="allMedications" class="input-medi" placeholder="Type here..."
+                    rows="7"></textarea>
+            </div>
         </div>
         <!-- Allergies -->
-        <div>
-            <label for="medicationallergies">Do you have any medication allergies?</label><br>
-            <input type="radio" name="allergies" id="yes">
-            <label for="yes">Yes</label>
+        <div class="medi-allergies">
+            <label for="medicationallergies">Do you have any medication allergies?</label>
 
-            <input type="radio" name="allergies" id="no">
-            <label for="no">No</label>
+            <div class="radio-ynNs">
+                <div>
+                    <input type="radio" name="allergies" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" name="allergies" id="no">
+                    <label for="no">No</label>
+                </div>
+                <div>
+                    <input type="radio" name="allergies" id="notSure">
+                    <label for="notSure">Not Sure</label>
+                </div>
+            </div>
+            <div class="currentalrg">
+                <label for="allAllergies">Please list them:</label>
+                <textarea name="allAllergies" id="allAllergies" class="input-alrg" placeholder="Type here..."
+                    rows="7"></textarea>
 
-            <input type="radio" name="allergies" id="notSure">
-            <label for="notSure">Not Sure</label><br>
-
-            <label for="allAllergies">Please list them:</label><br>
-            <input type="text" name="allAllergies" id="allAllergies"><br>
+            </div>
         </div>
 
         <!-- drugs -->
-        <div>
+        <div class="drugs">
             <label for="useDrugs">A drug that you consume on a regular basis?</label><br>
+
             <select name="drugs" id="useDrugs">
                 <option value="">Select the Drug</option>
                 <option value="marijuana">Marijuana</option>
@@ -207,12 +223,14 @@
                 <option value="Melatonin">Melatonin</option>
                 <option value="liquor">Liquor</option>
                 <option value="tobacco">Tobacco</option>
-            </select><br>
+            </select>
         </div>
-        <div>
-            <button type="submit">SUBMIT</button>
+
+        <div class="sbmt-btn">
+            <button type="submit" id="submit" onclick="execute()">SUBMIT</button>
         </div>
     </form>
+    <div id="show-out"></div>
 </body>
 
 </html>

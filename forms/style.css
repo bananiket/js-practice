@@ -13,6 +13,7 @@ body{
 header{
     font-size: xx-large;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 label{
     font-weight: bold;
@@ -48,7 +49,7 @@ label{
 }
 .yourAG{
     margin-top: 20px;
-    padding: 10px ;
+    padding: 10px;
 }
 
 
@@ -90,6 +91,11 @@ label{
     margin-bottom: 10px;
 }
 
+.other-condt{
+    padding: 10px;
+    display: none;
+}
+
 
 /* symptoms */
 .symptoms{
@@ -111,22 +117,85 @@ label{
     margin-bottom: 10px;
 }
 
+
+
 /* medication */
 .medication{
     margin: 40px 0px;
 }
-.radio-ys{
+.radio-yn{
     display: flex;
     justify-content: space-between;
     margin: 20px 0px;
 }
-.radio-ys div{
+.radio-yn div{
     flex: 1;
 }
 .input-medi{
     margin-top: 10px;
-    padding: 100px;
+}
+.currentMedi{
+    display: flex;
+    flex-direction: column;
+}
+textarea::placeholder{
+    font-size: large;
+}
+textarea{
+    padding: 10px;
+    font-size: large;
 }
 
+
+
+/* medication allergies */
+.medi-allergies{
+    margin: 40px 0px;
+}
+.radio-ynNs{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.radio-ynNs div{
+    flex: 1;
+}
+.input-alrg{
+    margin-top: 10px;
+}
+.currentalrg{
+    display: flex;
+    flex-direction: column;
+}
+textarea::placeholder{
+    font-size: large;
+}
+textarea{
+    padding: 10px;
+    font-size: large;
+}
+
+
+/* drug */
+.drugs select{
+    margin: 20px 0px;
+    padding: 10px 100px;
+}
+
+
+.sbmt-btn{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+button{
+    padding: 13px 50px;
+    font-size: large;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: rgb(35, 64, 142);
+    color: white;
+    cursor: pointer;
+}
 
 
