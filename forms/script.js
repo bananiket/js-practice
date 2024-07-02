@@ -1,4 +1,3 @@
-
 // function execute(){
 //     const show = document.getElementById("show-out")
 //     const firstName = document.getElementById("firstName")
@@ -29,50 +28,61 @@
 //             ${conditionsValue.join(", ")}
 //         `
 //     }
-      
+
 // }
-
-
 
 // window.addEventListener("load", execute)
 
-document.addEventListener('DOMContentLoaded', function() {
-    const conditions = document.querySelectorAll('input[name="condition"]');
-    const otherText = document.getElementById('other-condt');
+window.addEventListener("load", function () {
+  const conditions = document.querySelectorAll('input[name="condition"]');
+  const otherText = document.getElementById("other-option");
+  const symptoms = document.querySelectorAll('input[name="symptom"]');
+  const otherSymtom = documment.getElementById("other-option-sym");
 
-    conditions.forEach(condition => {
-        condition.addEventListener('change', function() {
-            if (condition.value === 'Other' && condition.checked) {
-                otherText.style.display = 'block';
-            } else if (condition.value === 'Other' && !condition.checked) {
-                otherText.style.display = 'none';
-            }
-        });
+  conditions.forEach((condition) => {
+    condition.addEventListener("change", function () {
+      if (condition.value === "Other" && condition.checked) {
+        otherText.style.display = "block";
+      } else if (condition.value === "Other" && !condition.checked) {
+        otherText.style.display = "none";
+      }
     });
+  });
+  symptoms.forEach((symptom) => {
+    symptom.addEventListener("change", function () {
+      if (symptom.value === "Other" && symptom.checked) {
+        otherSymtom.style.display = "block";
+      } else if (symptom.value === "Other" && !symptom.checked) {
+        otherSymtom.style.display = "none";
+      }
+    });
+  });
 });
 
 function execute() {
-    event.preventDefault();
+  event.preventDefault();
 
-    const show = document.getElementById('show-out');
-    const firstName = document.getElementById('firstName');
-    const lastName = document.getElementById('lastName');
-    const age = document.getElementById('age');
-    const gender = document.getElementById('gender');
-    const contactNumber = document.getElementById('contactNumber');
-    const email = document.getElementById('email');
-    const conditions = document.querySelectorAll('input[name="condition"]:checked');
+  const show = document.getElementById("show-out");
+  const firstName = document.getElementById("firstName");
+  const lastName = document.getElementById("lastName");
+  const age = document.getElementById("age");
+  const gender = document.getElementById("gender");
+  const contactNumber = document.getElementById("contactNumber");
+  const email = document.getElementById("email");
+  const conditions = document.querySelectorAll(
+    'input[name="condition"]:checked'
+  );
 
-    let conditionsValue = [];
-    conditions.forEach(condition => {
-        conditionsValue.push(condition.value);
-    });
+  let conditionsValue = [];
+  conditions.forEach((condition) => {
+    conditionsValue.push(condition.value);
+  });
 
-    show.innerHTML = `
+  show.innerHTML = `
         <p><strong>Name:</strong> ${firstName.value} ${lastName.value}</p>
         <p><strong>Age & Gender:</strong> ${age.value}, ${gender.value}</p>
         <p><strong>Contact:</strong> ${contactNumber.value}, ${email.value}</p>
-        <p><strong>Conditions:</strong> ${conditionsValue.join(', ')}</p>
-    `
-    show.style.display = 'block';
+        <p><strong>Conditions:</strong> ${conditionsValue.join(", ")}</p>
+    `;
+  show.style.display = "block";
 }
